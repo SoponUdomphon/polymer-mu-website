@@ -1,0 +1,398 @@
+.vision-page {
+  padding: 120px 0 0;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.vision-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.vision-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.vision-header h1:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #28a745;
+}
+
+.vision-content {
+  margin-bottom: 60px;
+}
+
+.vision-section {
+  background: #1e88e5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.career-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.vision-section:hover, .career-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vision-section h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.career-section h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.vision-section h2:after, .career-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #28a745;
+}
+
+.vision-section p {
+  color: white;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.career-section p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.career-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.career-section ul li {
+  color: #666;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.career-section ul li:before {
+  content: "•";
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  top: -2px;
+}
+
+.values-row {
+  margin-bottom: 60px;
+}
+
+.values-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.value-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #28a745;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(40, 167, 69, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-icon i {
+  color: #28a745;
+  font-size: 1.5rem;
+}
+
+.value-card h3 {
+  color: #28a745;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding-right: 60px;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.achievement-section {
+  margin-top: 60px;
+}
+
+.achievement-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.achievement-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #28a745;
+}
+
+.achievement-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.achievement-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #28a745;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(40, 167, 69, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.achievement-icon i {
+  color: #28a745;
+  font-size: 2rem;
+}
+
+.achievement-card h3 {
+  color: #28a745;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.achievement-card p {
+  color: #666;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .achievement-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-page {
+    padding: 100px 0 20px;
+  }
+
+  .vision-header h1 {
+    font-size: 2rem;
+  }
+
+  .vision-section h2, .career-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .value-card {
+    padding: 25px;
+  }
+
+  .value-icon {
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .value-icon i {
+    font-size: 1.2rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.3rem;
+    padding-right: 50px;
+  }
+
+  .achievement-card {
+    padding: 30px 20px;
+  }
+
+  .achievement-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .achievement-icon i {
+    font-size: 1.8rem;
+  }
+
+  .achievement-card h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .vision-page {
+    padding: 90px 0 20px;
+  }
+  
+  .achievement-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vision-section, .career-section {
+    padding: 25px;
+  }
+
+  .vision-section p, .career-section p, .value-card p, .career-section ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Social media icons styling */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #28a745;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.social-icons i {
+  font-size: 16px;
+}
+
+/* Footer styling */
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-section h4 {
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #28a745;
+  text-decoration: none;
+} 

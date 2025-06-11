@@ -1,0 +1,382 @@
+.home {
+  padding-top: 76px; /* Height of navbar */
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(135deg, #004085 0%, #002855 100%);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+  opacity: 1;
+  filter: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  padding: 2rem;
+  max-width: 600px;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.delicious-btn {
+  background-color: #28a745; /* Bootstrap's green color */
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px; /* Changed from 30px to 5px for a more box-like appearance */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #28a745; /* Added border to make it more box-like */
+  opacity: 1; /* Ensure full opacity */
+}
+
+.delicious-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  color: white;
+  transform: translateY(-2px);
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: #218838; /* Border color changes on hover */
+  opacity: 1; /* Ensure full opacity on hover */
+}
+
+/* Animation classes */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Feature card styles */
+.feature-card {
+  border: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: visible;
+  height: 100%;
+  position: relative;
+  padding-top: 60px;
+  margin-top: 40px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-circle {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  fill: rgb(233, 194, 0);
+  margin-top: 0;
+}
+
+/* Specific styling for the Cutting-Edge Research icon */
+.feature-card:nth-child(1) .icon-circle {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  z-index: 10;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card:nth-child(1) .feature-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Why Choose Our Program section */
+.pricing-header {
+  margin-bottom: 3rem;
+}
+
+.pricing-header h1 {
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.pricing-header h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #28a745;
+}
+
+/* Add more gap between Cutting-Edge Research and Industry Connections */
+.feature-card:nth-child(4) {
+  margin-top: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .hero-section {
+    height: 60vh;
+  }
+  
+  .hero-content {
+    margin-left: 0;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .feature-card {
+    margin-bottom: 2rem;
+    margin-top: 35px;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
+  
+  .feature-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Add more gap between Cutting-Edge Research and Industry Connections on mobile */
+  .feature-card:nth-child(4) {
+    margin-top: 60px;
+  }
+}
+
+/* Google Maps iframe styling */
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 180px;
+    margin-top: 15px;
+  }
+}
+
+/* Social media icons styling */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #28a745;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.social-icons i {
+  font-size: 16px;
+}
+
+/* Footer styling */
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-section h4 {
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+
+/* New Plan Label Styles */
+.new-plan-label {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: #ffc107;
+  color: #000;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  animation: float 2s infinite ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transform: translateZ(50px);
+}
+
+@keyframes float {
+  0% { transform: translateZ(50px) scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+  50% { transform: translateZ(50px) scale(1.05); box-shadow: 0 6px 12px rgba(0,0,0,0.4); }
+  100% { transform: translateZ(50px) scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+}
+
+.card-header {
+  position: relative;
+  overflow: visible;
+  transform-style: preserve-3d;
+} 

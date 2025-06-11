@@ -1,0 +1,282 @@
+.program-phd-page {
+  padding-top: 76px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.program-header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: transparent;
+  color: #000;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.program-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.program-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.program-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.program-buttons .btn {
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.program-buttons .btn-primary {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.program-buttons .btn-primary:hover {
+  background-color: #333;
+  color: white;
+}
+
+.program-buttons .btn-outline-primary {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.program-buttons .btn-outline-primary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.program-content {
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.program-content h2 {
+  color: #1e88e5;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Accordion Styles */
+.program-accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-bg: #1a237e;
+  --bs-accordion-active-bg: #1a237e;
+  --bs-accordion-active-color: white;
+  margin-top: 2rem;
+}
+
+.program-accordion .accordion-button {
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  margin-bottom: 0.75rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  position: relative;
+}
+
+.program-accordion .accordion-button:not(.collapsed) {
+  color: #1e88e5;
+  background-color: #e7f1ff;
+  box-shadow: none;
+}
+
+.program-accordion .accordion-body {
+  padding: 0 0 1.5rem 0;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  margin-top: 0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Student Info Styles */
+.student-info {
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #f8f9fa;
+  color: #1e88e5;
+  font-weight: 600;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .program-header {
+    padding: 3rem 1.5rem;
+  }
+
+  .program-header h1 {
+    font-size: 2rem;
+  }
+
+  .program-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .program-phd-page {
+    padding-top: 66px;
+  }
+
+  .program-header {
+    padding: 2rem 1rem;
+  }
+
+  .program-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .program-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .program-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .program-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .program-header p {
+    font-size: 1rem;
+  }
+
+  .program-content {
+    padding: 1rem;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Footer styling */
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.footer-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-section h4 {
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #28a745;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.social-icons i {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 30px 0;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul li a {
+    font-size: 14px;
+  }
+} 
